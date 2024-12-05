@@ -1,0 +1,70 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vcolor-detection"
+dynamic = ["version"]
+
+dependencies = [
+    "torch==2.4.0",
+    "transformers>=4.37.2",
+    "accelerate",
+    "sentencepiece",
+    "jsonargparse",
+    "docstring_parser",
+    "qwen-vl-utils",
+]
+
+requires-python = ">= 3.9"
+
+authors = [
+  {name = "Sen Yang", email = "yangsen@smail.nju.edu.cn"},
+]
+maintainers = [
+  {name = "Sen Yang", email = "yangsen@smail.nju.edu.cn"},
+]
+
+description = ""
+
+readme = "README.md"
+
+license = {file = "LICENSE"}
+
+keywords = ["deep-learning", "pytorch", "VLM"]
+
+
+classifiers = [
+  # How mature is this project? Common values are
+  #   3 - Alpha
+  #   4 - Beta
+  #   5 - Production/Stable
+  "Development Status :: 3 - Alpha",
+
+  # Indicate who your project is intended for
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+
+  # Pick your license as you wish (see also "license" above)
+  "License :: OSI Approved :: MIT License",
+
+  # Specify the Python versions you support here.
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+]
+
+
+# [project.urls]
+# Homepage = "https://github.com/DoubleVII/vcolor_detection"
+# Documentation = "https://github.com/DoubleVII/vcolor_detection"
+# Repository = "https://github.com/DoubleVII/vcolor_detection"
+# Issues = "https://github.com/DoubleVII/vcolor_detection/issues"
+# Changelog = ""
+
+[tool.setuptools]
+py-modules = ["vcolor_detection"]
+
+[project.optional-dependencies]
+    
